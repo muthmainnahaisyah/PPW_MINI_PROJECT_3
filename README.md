@@ -1,5 +1,5 @@
 # Berikut adalah Link Hosting:
-
+event-planner.wuaze.com
 
 # Berikut adalah email dan password:
 admin | email:muth01@gmail.com ; password:1111
