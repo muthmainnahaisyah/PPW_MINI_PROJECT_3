@@ -181,8 +181,8 @@ $title = "Events";
                                         <div class="modal-body">
                                             <form action="action.php" method="POST">
                                                 <div class="form-floating mb-3">
-                                                    <input type="hidden" value="<?=$data['id']?>" required>
-                                                    <input type="text" class="form-control" id="kategori" name="kategori" placeholder="pernikahan" value="<?=$data['kategori']?>" required>
+                                                    <input type="hidden" value="<?=$data['id']?>" name="id" required>
+                                                    <input type="text" class="form-control" id="kategori" name="kategori" placeholder="tidak boleh kosong" value="<?=$data['kategori']?>" required>
                                                     <label for="kategori">Ubah kategori</label>
                                                 </div>
                                                 <div class="row justify-content-end">
@@ -196,7 +196,6 @@ $title = "Events";
                                 </div>
                             </div>
                             <!-- end edit -->
-
                         <?php } ?>
                     </tbody>
                 </table>

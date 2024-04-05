@@ -23,6 +23,18 @@ if(isset($_POST['tambah'])) {
     }
 }
 
+if(isset($_POST['edit'])) {
+    $id = $_POST['id'];
+    $kategori = $_POST['kategori'];
+
+    $update = mysqli_query($koneksi, "UPDATE kategori SET kategori='$kategori' WHERE id='$id'");
+    if($update) {
+        alert("Berhasil merubah kategori", "events.php");
+    } else {
+        alert("Gagal merubah kategori", "events.php");
+    }
+}
+
 if(isset($_GET['act'])) {
     $id = $_GET['id'];
 
