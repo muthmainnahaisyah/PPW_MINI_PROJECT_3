@@ -1,6 +1,6 @@
 <?php
-session_start();
 
+include "login-checker.php";
 require 'koneksi.php';
 
 if (isset($_POST['submit'])) {

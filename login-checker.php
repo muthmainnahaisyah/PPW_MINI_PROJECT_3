@@ -8,13 +8,13 @@ if(isset($_SESSION['sudah_login'])) {
     if($_SESSION['user_type'] == "admin") {
         ?>
             <script>
-                document.location = "admin.php";
+                document.location = "admin/admin.php";
             </script>
         <?php
     } else {
         ?>
             <script>
-                document.location = "user.php";
+                document.location = "user/user.php";
             </script>
         <?php
     }
